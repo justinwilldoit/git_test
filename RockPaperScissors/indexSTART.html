@@ -1,0 +1,59 @@
+<script>
+    function computerPlay() {
+        let random = Math.floor(Math.random() * 3)
+        if (random === 0) {
+            return 'Rock';
+        } else if (random === 1) {
+            return 'Paper'
+        } else if (random === 2) {
+            return 'Scissors'
+        }
+}
+
+function playRound(playerSelection, computerSelection) {
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
+    if (playerSelection === computerSelection) {
+        console.log("It is a tie!");
+        return 'It Is a tie';
+    } if (playerSelection === 'rock') {
+        if (computerSelection === 'scissors') {
+            console.log('Player wins!');
+            return 'Player wins!';
+        } else {
+            console.log('Computer wins!');
+            return 'Computer wins!';
+        }
+    } if (playerSelection === 'paper') {
+        if (computerSelection === 'rock') {
+            console.log('Player wins!');
+            return 'Player wins!';
+        } else {
+            console.log('Computer wins!');
+            return 'Computer wins!';
+        } if (playerSelection === 'scissors') {
+            if (computerSelection === 'paper') {
+                console.log('Player wins!');
+                return 'Player wins!';
+            } else {
+                console.log('Computer wins!');
+                return 'Computer wins!';
+            }
+        }
+    }
+}
+
+function game(rounds) {
+    let playerWins = 0;
+    let computerWins = 0;
+    for (i = 0; i < rounds; i++) {
+        if (playRound(prompt('rock, paper, or scissors?'), computerPlay()) === 'Player wins!') {
+            playerWins++;
+        } else {
+            computerWins++;
+        }
+    }
+    console.log('Player Wins: ' + playerWins);
+    console.log('Computer Wins: ' + computerWins);
+}
+</script>
