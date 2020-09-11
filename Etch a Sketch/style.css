@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: red;
+}
+.buttons {
+    display: flex;
+    background-color: red;
+}
+
+.container {
+    display: grid;
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 5px solid black;
+}
+
+.active {
+    background-color: black;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellowgreen;
+}
