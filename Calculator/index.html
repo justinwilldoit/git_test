@@ -6,7 +6,7 @@
 <body>
 <div class="calculator card">
   
-  <div type="text" class="calculator-screen"><h1 class="screen" maxlength="9"></h1></div>
+  <div type="text" class="calculator-screen"><div class="previousScreen">0</div><div class="currentScreen" maxlength="9"></div></div>
   
   <div class="buttons">
   <button type="button" class="operator btn btn-info" value="/">&divide;</button>
@@ -26,9 +26,9 @@
   <button type="button" class="number btn btn-light" value="2">2</button>
   <button type="button" class="number btn btn-light" value="3">3</button>
   <button type="button" class="number btn btn-light" value="0">0</button>
-  <button type="button" class="number btn btn-light" value=".">.</button>
+  <button type="button" class="decimal btn btn-light" value=".">.</button>
   <button type="button" class="all-clear btn btn-danger" value="all-clear">AC</button>
-  <button type="button" class="equal-sign operator btn btn-success" value="">=</button>
+  <button type="button" class="equal-sign btn btn-success" value="=">=</button>
 
 </div>
   </div>
@@ -36,6 +36,19 @@
 </html>
 
 <style>
+
+
+.currentScreen {
+  height: 60px;
+  margin: 0px;
+  font-size: 3rem;
+}
+
+.previousScreen {
+  height: 40px;
+  margin: 0px;
+  font-size: 2rem;
+}
 
 .screen {
   font-size: 4rem;
@@ -80,8 +93,8 @@ button {
   background-color: black;
   text-align: right;
   color: white;
-  font-size: 4rem;
   padding: 10px;
+  padding-top: 0px;
 }
 
 .equal-sign {
