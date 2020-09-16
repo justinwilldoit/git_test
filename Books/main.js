@@ -116,3 +116,8 @@ newBook.addEventListener('click', function(){
 
 form.addEventListener('submit', addBookToLibrary) 
 
+toggleBtn = document.querySelector('.toggleButton');
+
+toggleBtn.addEventListener('click', function() {
+  
+})

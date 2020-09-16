@@ -13,6 +13,7 @@ form {
     opacity: 0;
     background-color: whitesmoke;
     border: 2px solid black;
+    opacity: 0;
 }
 
 h1 {
@@ -23,6 +24,9 @@ button.newbook {
     display: flex;
     margin: auto;
     margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: slategray;
+    font-size: 25px;
 }
 
 label {
@@ -41,7 +45,7 @@ label {
 }
 
 .active {
-    background-color: greenyellow;
+    opacity: 1;
 }
 
 body {
@@ -51,7 +55,6 @@ body {
 .cards {
 
     margin: auto;
-    background: peachpuff;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -60,14 +63,14 @@ body {
     text-align: center;
     width: 200px;
     height: 330px;
-    background-color: white;
-    background: transparent;
-    border: 2px solid orange;
+    background-color: whitesmoke;
+
+    border: 2px solid black;
     margin: auto;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 
@@ -89,9 +92,12 @@ body {
 
 .removeButton {
     background-color: red;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 5px;
 }
 
 .toggleButton {
-    margin-top: 10px;
-    width: 80%;
+    background-color: lightgray;
+    border-radius: 5px;
 }

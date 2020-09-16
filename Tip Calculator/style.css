@@ -1,0 +1,86 @@
+.header {
+    text-align: center !important;
+    margin: 0% !important;
+    padding-bottom: 10px;
+}
+body {
+    background-color: seagreen;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: lightgray;
+    position: relative;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+}
+
+.bill {
+    display: flex;
+    font-size: 17px;
+}
+
+input.bill {
+    height: 20px;
+    width: 200px;
+    margin: auto;
+
+}
+
+.slider {
+    width: 90%;
+}
+
+.people {
+    width: 90%;
+}
+
+h4 {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1rem;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 2rem;
+}
+.tip {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+span {
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+}
+
+.tip-amount {
+    margin-left: 10%;
+    text-align: left;
+}
+
+#total-tip {
+bottom: 54%;
+}
+
+#total-bill {
+    bottom: 44%;
+}
+
+#numberOfPeople {
+    bottom: 29%;
+}
+
+#split-amount {
+    bottom: 8%;
+}
